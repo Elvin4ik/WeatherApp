@@ -64,23 +64,23 @@ function searchNewYork(event) {
 const newYorkButton = document.querySelector("#new-york-button");
 newYorkButton.addEventListener("click", searchNewYork);
 
-function searchLosAngeles(event) {
+function searchPortlandOregon(event) {
   event.preventDefault();
-  searchCity("Los Angeles");
-  document.querySelector("#city-and-country").innerHTML = "Los Angeles";
+  searchCity("Portland, Oregon");
+  document.querySelector("#city-and-country").innerHTML = "Portland, Oregon";
 }
 
-const losAngelesButton = document.querySelector("#los-angeles-button");
-losAngelesButton.addEventListener("click", searchLosAngeles);
+const losAngelesButton = document.querySelector("#Portland-Oregon-button");
+Portland,OregonButton.addEventListener("click", searchPortland, Oregon);
 
-function searchChicago(event) {
+function searchBoston(event) {
   event.preventDefault();
-  searchCity("Chicago");
-  document.querySelector("#city-and-country").innerHTML = "Chicago";
+  searchCity("Boston");
+  document.querySelector("#city-and-country").innerHTML = "Boston";
 }
 
-const chicagoButton = document.querySelector("#chicago-button");
-chicagoButton.addEventListener("click", searchChicago);
+const BostonButton = document.querySelector("#Boston-button");
+BostonButton.addEventListener("click", searchBoston);
 
 function formatDate(date, timezone) {
   const localOffsetInMs = date.getTimezoneOffset() * 60 * 1000;
@@ -132,41 +132,41 @@ function formatDate(date, timezone) {
 function getIcon(icon) {
   let iconElement = "";
   if (icon === "01d") {
-    iconElement = "images/01d.png";
+    iconElement = "image/01d.png";
   } else if (icon === "01n") {
-    iconElement = "images/01n.png";
+    iconElement = "image/01n.png";
   } else if (icon === "02d") {
-    iconElement = "images/02d.png";
+    iconElement = "image/02d.png";
   } else if (icon === "02n") {
-    iconElement = "images/02n.png";
+    iconElement = "image/02n.png";
   } else if (icon === "03d") {
-    iconElement = "images/03d.png";
+    iconElement = "image/03d.png";
   } else if (icon === "03n") {
-    iconElement = "images/03n.png";
+    iconElement = "image/03n.png";
   } else if (icon === "04d") {
-    iconElement = "images/04d.png";
+    iconElement = "image/04d.png";
   } else if (icon === "04n") {
-    iconElement = "images/04n.png";
+    iconElement = "image/04n.png";
   } else if (icon === "09d") {
-    iconElement = "images/09d.png";
+    iconElement = "image/09d.png";
   } else if (icon === "09n") {
-    iconElement = "images/09n.png";
+    iconElement = "image/09n.png";
   } else if (icon === "10d") {
-    iconElement = "images/10d.png";
+    iconElement = "image/10d.png";
   } else if (icon === "10n") {
-    iconElement = "images/10n.png";
+    iconElement = "image/10n.png";
   } else if (icon === "11d") {
-    iconElement = "images/11d.png";
+    iconElement = "image/11d.png";
   } else if (icon === "11n") {
-    iconElement = "images/11n.png";
+    iconElement = "image/11n.png";
   } else if (icon === "13d") {
-    iconElement = "images/13d.png";
+    iconElement = "image/13d.png";
   } else if (icon === "13n") {
-    iconElement = "images/13n.png";
+    iconElement = "image/13n.png";
   } else if (icon === "50d") {
-    iconElement = "images/50d.png";
+    iconElement = "image/50d.png";
   } else if (icon === "50n") {
-    iconElement = "images/50n.png";
+    iconElement = "image/50n.png";
   }
   return iconElement;
 }
