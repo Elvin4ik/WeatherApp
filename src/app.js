@@ -64,14 +64,14 @@ function searchNewYork(event) {
 const newYorkButton = document.querySelector("#new-york-button");
 newYorkButton.addEventListener("click", searchNewYork);
 
-function searchPortlandOregon(event) {
+function searchPortland(event) {
   event.preventDefault();
-  searchCity("Portland, Oregon");
-  document.querySelector("#city-and-country").innerHTML = "Portland, Oregon";
+  searchCity("Portland");
+  document.querySelector("#city-and-country").innerHTML = "Portland";
 }
 
-const losAngelesButton = document.querySelector("#Portland-Oregon-button");
-Portland,OregonButton.addEventListener("click", searchPortland, Oregon);
+const PortlandButton = document.querySelector("#Portland-button");
+PortlandButton.addEventListener("click", searchPortland);
 
 function searchBoston(event) {
   event.preventDefault();
